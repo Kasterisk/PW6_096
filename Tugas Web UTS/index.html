@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>eMarket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="bootstrap/css/bootstrap.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand text-light" href="#">eMarket</a>
+            <form class="d-flex flex-fill mx-5" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <button class="btn btn-primary" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="hero" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pre1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="images/pre2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="images/pre3.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid min-vh-100 bg-secondary bg-opacity-10">
+        <div class="row row-cols-1 p-4 gy-5">
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Top Seller Elektronik</h5>
+                    <div class="container-fluid overflow-auto">
+                        <div class="row flex-row flex-nowrap py-3" id="electroTopSellersRow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Top Seller Alat Masak</h5>
+                    <div class="container-fluid overflow-auto">
+                        <div class="row flex-row flex-nowrap py-3" id="cookwareTopSellersRow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Diskon Spesial</h5>
+                    <div class="container-fluid overflow-auto">
+                        <div class="row flex-row flex-nowrap py-3" id="specialDiscountsRow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center p-4">
+        <div class="row row-cols-1 gy-2">
+            <div class="col">
+            <h6>Berbelanja dengan aman, mudah dan kapan saja di eMarket!</h6>
+            </div>
+            <div class="col">
+            <p class="m-2">Ingin jual produk di eMarket?</p>
+            <a class="btn btn-warning" href="#" role="button">Buka Toko Sekarang</a>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container-fluid px-5 py-4 bg-primary">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 px-5">
+            <div class="col">
+                <h5 class="text-white">eMarket</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tentang eMarket</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Karir</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 class="text-white">Ikuti Kami</h5>
+                <ul class="nav">
+                    <a class="btn btn-primary" href="#" role="button"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="btn btn-primary" href="#" role="button"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="btn btn-primary" href="#" role="button"><i class="fa-brands fa-instagram"></i></a>
+                </ul>
+            </div>
+        </div>
+        <div class="mx-5 mt-5 pt-2 border-top">
+            <p class="text-white">© 2022, PT. eMarket.</p>
+        </div>
+    </div>
+</footer>
+</html>

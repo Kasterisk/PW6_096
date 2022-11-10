@@ -1,0 +1,23 @@
+$primary: rgb(30, 59, 51);
+
+@import "bootstrap/scss/bootstrap.scss";
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
